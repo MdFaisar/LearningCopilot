@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "learning-copilot"
+version = "1.0.0"
+description = "AI-powered learning assistant"
+
+[tool.vercel]
+entrypoint = "backend/app.py"
