@@ -5,11 +5,6 @@
   "env": {
     "PYTHON_VERSION": "3.9"
   },
-  "env_display": [
-    "FIREBASE_CREDENTIALS_JSON",
-    "GROQ_API_KEY",
-    "DEBUG"
-  ],
   "rewrites": [
     {
       "source": "/api/(.*)",
