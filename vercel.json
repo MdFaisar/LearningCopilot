@@ -1,0 +1,23 @@
+{
+  "buildCommand": "npm run build && npm run build:backend",
+  "installCommand": "npm install && cd backend && pip install -r requirements.txt",
+  "framework": "other",
+  "env": {
+    "PYTHON_VERSION": "3.9"
+  },
+  "env_display": [
+    "FIREBASE_CREDENTIALS_JSON",
+    "GROQ_API_KEY",
+    "DEBUG"
+  ],
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

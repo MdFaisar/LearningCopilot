@@ -1,0 +1,40 @@
+# Environment variables (NEVER commit)
+.env
+.env.local
+.env.*.local
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Frontend build
+frontend/dist/
+frontend/build/
+
+# Python
+backend/__pycache__/
+backend/venv/
+backend/.venv/
+*.pyc
+*.egg-info/
+backend/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads and vector stores (runtime data)
+backend/uploads/
+backend/vector_stores/
+
+# Firebase credentials file (use env instead)
+backend/firebase-credentials.json
